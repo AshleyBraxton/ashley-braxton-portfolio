@@ -56,3 +56,20 @@ h2 {
     top: 130px;
     right: 60px;
 }
+#about-me article {
+    color: #1f403E;
+    border-left: #8d6f78 5px solid;
+    width: 80%;
+    padding: 0px 10px;
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+h3 {
+    margin: 10px 20px;
+    color: #8d6f78;
+    font-size: 2rem;
+    display: inline;
+    float: left;
+
+}
