@@ -138,3 +138,24 @@ h4 {
 }
 
 
+#contact-me ul {
+    margin: auto 30px;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    list-style: none;
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    border-left: #8d6f78 5px solid;
+    color: #003431;
+    text-decoration: underline 3px solid #8d6f78  ;
+    width: 1200px;
+}
+   
+#contact-me a {
+    text-decoration: none;
+    color:#003431
+}
+
+
