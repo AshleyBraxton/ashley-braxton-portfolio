@@ -6,7 +6,7 @@
 }
 
 body{
-    margin: 0;
+    /* margin: 0; santi */
     background-color: #b4cac8;
 }
 
@@ -95,6 +95,9 @@ h2 {
     height:auto;
     max-width:1000px
 }
+.container a {
+    display: flex;
+}
 
 #main-project {
     flex: 1 1 100%;
@@ -138,7 +141,7 @@ h4 {
 }
 
 
-#contact-me ul {
+#contact-info {
     margin: auto 30px;
     font-weight: bold; 
     font-family: 'Times New Roman', Times, serif;
