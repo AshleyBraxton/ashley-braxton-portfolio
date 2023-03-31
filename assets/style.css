@@ -1,6 +1,8 @@
 :root{
 --accent-color: #c8a2a1;
 --dark: #003431;
+--borders: #8d6f78;
+/* ^ sets a few color variable that can be used to 'dry' the code and make it easy to quickly change multiple colors */
 
 
 }
@@ -8,6 +10,7 @@
 body{
     background-color: #b4cac8;
 }
+/* Sets the main background color */
 
 header {
     display:flex;
@@ -16,13 +19,14 @@ header {
     align-items: center;
     margin-bottom: 0%;
 }
+/*sets the header to flex to format the navigation links and the title, allows me to set them to have space between pushing them toopposite sides*/
 
 nav ul {
     display:flex;
     list-style: none;
     justify-content: space-between;
-    /* min-width: 300px; */
 }
+/* sets the nav links to display flex sowing in a row rather than a column, show without any bullet points an space out along the header */
 
 nav a {
     color: var(--accent-color);
@@ -33,22 +37,23 @@ nav a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.25rem;
 }
-
+/* sets the font size and preferred font, Removes hyperlink styling , sets font color, and adds an underline */
 h1{
     background-color: var(--accent-color);
     color:var(--dark);
     font-size: 3rem;
     font-family: 'lucida handwriting',sans-serif;
 }
+/* sets the title at top of page with a preferred font and gives it a background */
 
 .background-img {
 background-image: url(./dark-leaves-green-aesthetic.jpg);
 margin-top: 0;
 height: 200px;
-/* background-repeat: no-repeat; */
 position: relative;
 width: 100%;
 }
+/* links the image for the background, gives it a height of 200 pixles and tells it to take up the entire window for width */
 
 h2 {
     margin: 0;
@@ -61,6 +66,7 @@ h2 {
     top: 130px;
     right: 60px;
 }
+/* Styles the subtitle to float to the right side of the banner, sets the position to relative so that it will remain there when the screen size changes */
 
 h3 {
     font-size: 2rem
@@ -71,18 +77,21 @@ h3 {
     padding: 0px 10px;
     font-size: 1.1rem;
 }
+/* sets up the About me paragraph, telling it to take up 80% of the window and sets the color */
 .section-headers {
     margin: 10px 20px;
-    color: #8d6f78;
+    color: var(--borders);
     font-size: 2rem;
     width: 10%
 
 }
+/* sets up the headers for every section making them the same and giving them a cohesiveness*/
 
 .section-block {
     display: flex;
     margin-top: 10px;
 }
+/* sets up the flex box for the different sections allowing them to be more responsive to screen changes*/
 
 #my-work {
     font-size: 1.1rem;
@@ -93,11 +102,13 @@ h3 {
     flex-wrap: wrap;
     margin: 10px 10px;
     height:auto;
+    /* Sets up the flexbox for the my work portion, telling it to wrap and not to overflow*/
 }
 #projects {
     display: flex;
     flex-direction: column;
 }
+/* Tells the projets to flex in a column rather than a row */
 
 #main-project {
     flex: 1 1 100%;
@@ -106,51 +117,55 @@ h3 {
     background-image: url(./Horiseon\ page\ top.jpg);
     background-size:cover;
     margin: 10px 20px;
+    /* sets up the main project on its own to be larger than the other projects*/
 
 }
 
 #projects a {
     text-decoration: none;
-    color:#003431;
+    color:var(--dark);
+    /* Takes away the hyperlink formatting in the project links*/
 }
 
 .small-project {
     text-align: center;
     border: 10px solid var(--accent-color);
-    /* background-image: url(./surf.jpg); */
     margin: 10px 20px;
     height: 300px;
     position: relative;
 }
+/* sets up the smaller project flex box, allowing them to organize in two responsive columns*/
 
 #sp-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+/* sets the small projects to wrap instaed of overflow, and spaces them out*/
 
 #sp-wrapper a {
     width: 50%;
-    /* text-decoration: none;
-    color:#003431; */
+
 }
  
 .main-header {
     display:inline-block;
-    background-color: #c8a2a1;
+    background-color: var(--accent-color);
     position: relative;
     top: 225px;
     font-size: 10px;
 }
+/* positions the project label onto the card in a way that will allow it to move with the card, making it more responsive*/
 
 .small-header {
     display:inline-block;
-    background-color: #c8a2a1;
+    background-color: var(--accent-color);
     position: absolute;
     top: 70px;
     left: 0px;
     font-size: 10px;
 }
+/* positions the small project labels onto the card in a way that will allow it to move with the card, making it more responsive*/
 h4 {
     font-size: 16px;
     font-weight: bold;
@@ -158,9 +173,10 @@ h4 {
 }
 
 .right-side {
-    border-left: #8d6f78 5px solid;
+    border-left: var(--borders) 5px solid;
     width: 100%;
 }
+/* gives all the sections a border to the left, making them look more cohesive*/
 
 #contact-info {
     font-weight: bold; 
@@ -169,34 +185,37 @@ h4 {
     display:flex;
     list-style: none;
     justify-content: space-between; 
-    color: #003431;
+    color: var(--dark);
     text-decoration: underline 3px solid #8d6f78  ;
     margin: 10px 5px
 }
+/* formats the list to display without bullet points, in a row rather than a column, and organizes them with space between*/
    
 #contact-me li a {
     text-decoration: none;
-    color:#003431
+    color: var(--dark)
 }
-
+/*Takes away the hyperlink formatting*/
 #surf-report {
  background-image: url(./surf.jpg);
  background-size:cover;
 }
-
+/* adds the background image for the project*/
 #calculator {
     background-image: url(./calculator.jpg); 
     background-size:cover;
 }
+/* adds the background image for the project*/
 #led-wall {
     background-image: url(./LED-Wall.webp); 
     background-size:cover;
 }
+/* adds the background image for the project*/
 #run-buddy {
     background-image: url(./running-tests.webp); 
     background-size:cover;
 }
-
+/* adds the background image for the project*/
 img {
     width:100px;
     height: 100px;
@@ -204,12 +223,13 @@ img {
     top: 20px;
     left: 20px;
 }
-
+/*formats the avatar image into the banner, and positions it relative*/
 #projects a :hover {
     background-color: beige;
     opacity: 80%;
     border: 5px;
 }
+/* makes the projects fade when hovered on and also decreases the border*/
  
 @media screen and (max-width: 768px) {
     nav a {
@@ -220,7 +240,7 @@ img {
         font-size: 1.5rem
     }
     }
-
+/*makes the nav links smaller on what would be a tablet screen, decreases the underline. makes the headings smaller as well*/
     @media screen and (max-width: 576px) {
         #sp-wrapper a {
             width: 100%;
@@ -238,4 +258,4 @@ img {
             flex-direction: column;
         }
         }
-       
+       /* changes the projects to display single file and take up 100% of the width, strectches the backgroung image and header to fit the screen, and changes the contact info to display in a column rather than a row*/
