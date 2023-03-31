@@ -104,14 +104,20 @@ h3 {
     border: 10px solid var(--accent-color);
     height: 300px;
     background-image: url(./Horiseon\ page\ top.jpg);
+    background-size:cover;
     margin: 10px 20px;
 
+}
+
+#projects a {
+    text-decoration: none;
+    color:#003431;
 }
 
 .small-project {
     text-align: center;
     border: 10px solid var(--accent-color);
-    background-image: url(./surf.jpg);
+    /* background-image: url(./surf.jpg); */
     margin: 10px 20px;
     height: 300px;
     position: relative;
@@ -125,6 +131,8 @@ h3 {
 
 #sp-wrapper a {
     width: 50%;
+    /* text-decoration: none;
+    color:#003431; */
 }
  
 .main-header {
@@ -142,7 +150,6 @@ h3 {
     top: 70px;
     left: 0px;
     font-size: 10px;
-    text-decoration: none;
 }
 h4 {
     font-size: 16px;
@@ -172,4 +179,20 @@ h4 {
     color:#003431
 }
 
+#surf-report {
+ background-image: url(./surf.jpg);
+ background-size:cover;
+}
 
+#calculator {
+    background-image: url(./calculator.jpg); 
+    background-size:cover;
+}
+#led-wall {
+    background-image: url(./LED-Wall.webp); 
+    background-size:cover;
+}
+#run-buddy {
+    background-image: url(./running-tests.webp); 
+    background-size:cover;
+}
