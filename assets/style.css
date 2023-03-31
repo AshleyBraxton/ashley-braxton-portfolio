@@ -196,3 +196,11 @@ h4 {
     background-image: url(./running-tests.webp); 
     background-size:cover;
 }
+
+img {
+    width:100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
