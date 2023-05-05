@@ -196,8 +196,8 @@ h4 {
     color: var(--dark)
 }
 /*Takes away the hyperlink formatting*/
-#surf-report {
- background-image: url(./surf.jpg);
+#movie-project {
+ background-image: url(./mainPageScreenshot.png);
  background-size:cover;
 }
 /* adds the background image for the project*/
